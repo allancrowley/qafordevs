@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: "qafordevs"
+  datasource:
+    url: jdbc:postgresql://localhost:5432/qafordevs
+    hikari:
+      username: postgres
+      password: postgres
+      driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: create
